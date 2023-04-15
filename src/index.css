@@ -74,7 +74,7 @@ button {
 .hero {
     width: 1080px;
     height: 608px;
-    margin-top: -70px;
+    margin: -70px auto 0;
     background: url('images/stopWar.webp');
 }
 
