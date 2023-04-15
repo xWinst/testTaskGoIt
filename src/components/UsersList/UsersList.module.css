@@ -1,0 +1,36 @@
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+
+.btnBox {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    width: 150px;
+    padding: 14px;
+    font-weight: 600;
+    font-size: 18px;
+    box-shadow: 0 3.4px 3.4px rgba(0, 0, 0, 0.25);
+    border: none;
+    border-radius: 10px;
+    background: var(--loader-color);
+    text-transform: uppercase;
+
+    transition: background-color 300ms ease, color 300ms ease;
+}
+
+.btn:hover {
+    background-color: var(--accent-color);
+    color: var(--second-color);
+}
+
+.text {
+    color: var(--second-color);
+    text-align: center;
+}

@@ -1,0 +1,50 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.spinner {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: var(--loader-size);
+    height: var(--loader-size);
+}
+.item {
+    width: calc(var(--loader-size) / 10);
+    height: 80%;
+    border-radius: calc(var(--loader-size) / 20);
+    background: var(--loader-color);
+    animation: spinner1 1000ms ease-in-out infinite;
+}
+
+.item:nth-child(1) {
+    animation-delay: calc(100ms * -3);
+}
+
+.item:nth-child(2) {
+    animation-delay: calc(100ms * -1);
+}
+
+.item:nth-child(3) {
+    animation-delay: calc(100ms * -2);
+}
+
+.item:nth-child(4) {
+    animation-delay: calc(100ms * -1);
+}
+
+.item:nth-child(5) {
+    animation-delay: calc(100ms * -3);
+}
+@keyframes spinner1 {
+    50% {
+        height: 20%;
+    }
+}

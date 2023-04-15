@@ -1,0 +1,84 @@
+.container {
+    position: relative;
+    width: 380px;
+    height: 460px;
+    display: flex;
+    flex-direction: column;
+    background: url('images/cardBg.webp'),
+        linear-gradient(
+            114.99deg,
+            #471ca9 -0.99%,
+            #5736a3 54.28%,
+            #4b2a99 78.99%
+        );
+    background-repeat: no-repeat;
+    background-position: center top 28px, left top;
+    box-shadow: -2.5777px 6.87386px 20.6216px rgba(0, 0, 0, 0.23);
+    border-radius: 20px;
+}
+
+.icon {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.line {
+    height: 8px;
+    margin-top: 172px;
+    margin-bottom: 46px;
+    background: var(--main-color);
+    box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.06),
+        inset 0px -1.71846px 3.43693px #ae7be3,
+        inset 0px 3.43693px 2.5777px #fbf8ff;
+}
+
+.avatarBox {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 178px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background: var(--main-color);
+    box-shadow: 0px 4.39163px 4.39163px rgba(0, 0, 0, 0.06),
+        inset 0px -2.19582px 4.39163px #ae7be3,
+        inset 0px 4.39163px 3.29372px #fbf8ff;
+    border-radius: 50%;
+}
+
+.avatar {
+    width: 62px;
+    height: 62px;
+    background: linear-gradient(
+        114.99deg,
+        #471ca9 -0.99%,
+        #5736a3 54.28%,
+        #4b2a99 78.99%
+    );
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.text {
+    margin-top: 16px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.btn {
+    width: 196px;
+    margin: 26px auto;
+    padding: 14px 0;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.22;
+    box-shadow: 0 3.43693px 3.43693px rgba(0, 0, 0, 0.25);
+    border: none;
+    border-radius: 10.3108px;
+    color: var(--second-color);
+    text-transform: uppercase;
+}

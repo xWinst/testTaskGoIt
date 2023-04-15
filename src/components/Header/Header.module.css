@@ -1,0 +1,44 @@
+.header {
+    position: fixed;
+    width: 100%;
+    background-image: var(--header-gradient);
+    z-index: 10;
+}
+
+.nav {
+    display: flex;
+    max-width: 1280px;
+    padding: 20px 0;
+    padding-left: calc((100% - 1280px) / 2 + 30px);
+    gap: 100px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.mainNav {
+    display: flex;
+    gap: 50px;
+}
+
+.link {
+    display: block;
+    padding: 5px;
+    font-weight: 700;
+    font-size: 26px;
+    text-align: center;
+    color: var(--main-color);
+
+    transition: scale 300ms ease;
+}
+.link:hover {
+    scale: 1.1;
+}
+
+.active {
+    composes: link;
+    color: var(--accent-color);
+    border-bottom: 2px solid;
+}
